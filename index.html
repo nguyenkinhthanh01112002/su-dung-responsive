@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* CSS cho toàn bộ trang */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* CSS cho phần header */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* CSS cho phần nội dung chính */
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      
+      /* CSS cho các phần tử con của phần nội dung chính */
+      .item {
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 30%;
+      }
+      
+      /* CSS cho màn hình có độ rộng lớn hơn hoặc bằng 768px */
+      @media screen and (min-width: 768px) {
+        .item {
+          width: 45%;
+        }
+      }
+      
+      /* CSS cho màn hình có độ rộng lớn hơn hoặc bằng 992px */
+      @media screen and (min-width: 992px) {
+        .item {
+          width: 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Trang web responsive</h1>
+    </header>
+    <div class="content">
+      <div class="item">
+        <h2>Item 1</h2>
+        <p>Nội dung của item 1</p>
+      </div>
+      <div class="item">
+        <h2>Item 2</h2>
+        <p>Nội dung của item 2</p>
+      </div>
+      <div class="item">
+        <h2>Item 3</h2>
+        <p>Nội dung của item 3</p>
+      </div>
+    </div>
+  </body>
+</html>
